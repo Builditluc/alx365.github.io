@@ -1,3 +1,3 @@
-for (let i = 0; i < 1000000000000; i++) {
+for (let i = 0; i < Infinity; i++) {
     alert('YOU ARE STUPID!(In deutsch: "Du bist dumm!)"')  
     }
