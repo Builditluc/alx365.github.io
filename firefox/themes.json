@@ -6,5 +6,13 @@
         "picture": "Test",
         "title" : "Test",
         "files": "Test"
+    }, 
+    {
+        "name": "Test2",
+        "author": "Test2",
+        "description" :"Test2",
+        "picture": "Test2",
+        "title" : "Test2",
+        "files": "Test2"
     }]
 }
