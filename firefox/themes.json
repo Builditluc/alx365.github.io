@@ -1,0 +1,10 @@
+{
+    "themes": [{
+        "name": "Test",
+        "author": "Test",
+        "description" :"Test",
+        "picture": "Test",
+        "title" : "Test",
+        "files": "Test"
+    }]
+}
