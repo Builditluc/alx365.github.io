@@ -20,7 +20,9 @@ function appendData(data) {
     // For the lenght 
     for (var i = 0; i < data.themes.length; i++) {
       var div = document.createElement("div");
-      div.innerHTML = 'Name: ' + data.themes[i].name;
+      div.innerHTML = 
+      'Name: ' + data.themes[i].name;
+      div.style.backgroundColor = "black"
       mainContainer.appendChild(div);
     }
   }
