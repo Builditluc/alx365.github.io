@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <title>Bewegungsdiagram</title>
+  <script src="path/to/chartjs/dist/Chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+<body>
+  <canvas id="myChart" width="400" height="400"></canvas>
+  <script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var myChart = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: ["0m", "5m", "10m", "15m", "20m", "25m", "30m"],
+        datasets: [
+          {
+            label: "m schon gefahren",
+            data: [0, 333.3, 666.6, 1000, 1000, 4500, 8000],
+            backgroundColor: ["rgba(151, 7, 109, 0)"],
+            borderColor: ["rgba(255, 99, 132, 1)"],
+            borderWidth: 1,
+            pointBackgroundColor: "rgba(0,0,0, 1)",
+          },
+        ],
+      },
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
+
+        elements: {
+          line: {
+            tension: 0,
+          },
+        },
+      },
+    });
+  </script>
+</body>
